@@ -14,6 +14,11 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
   imports: [
     CommonModule,
     MaterialModule
-  ]
+  ],
+  exports:[
+    MenuComponent,
+    NotFoundPageComponent
+   ]
+
 })
 export class SharedModule { }

@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
   declarations: [
-    LayoutComponent
+    LayoutComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
