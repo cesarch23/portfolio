@@ -82,6 +82,9 @@
       padding:5px 21px;
   
     }
+    .menu-destock__buttons .button:hover{
+        background-color: var(--primary-color);
+    }
     .menu-destock__buttons .button.actives {
       background-color: var(--primary-color);
     }
