@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './component/menu/menu.component';
 import { MaterialModule } from '../material/material.module';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { Router, RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +14,8 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
   exports:[
     MenuComponent,
