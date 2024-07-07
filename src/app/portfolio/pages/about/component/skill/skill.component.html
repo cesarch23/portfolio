@@ -1,0 +1,4 @@
+<div class="skill" *ngFor="let skill of skills">
+    <img  class="skil__image" [src]="'/assets/images/skills-percentage/skill-'+skill.percentage+'.svg'" [alt]="skill.name">
+    <p class="skill__name"> {{skill.name}} </p>
+</div>

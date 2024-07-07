@@ -1,0 +1,66 @@
+.container {
+    height: calc(100vh - var(--menu-height));
+  }
+  .subtittle{
+    margin: 40px 0px;
+    font-size: 20px;
+  }
+  .about__tittle {
+    margin-top: 40px;
+    background: linear-gradient(90deg, #1082E6 0%, #0098F4 15.05%, #04A0EC 30.07%, #04AFE1 44.82%, #0BC2DD 60.37%, #00CCDF 73.78%, #0ED0DE 84.77%, #21DCCA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    font-size: 44px;
+    font-weight: 900;
+  
+  }
+  
+  .skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    margin: 40px 0px;
+  
+  }
+  
+  @media (min-width: 768px) {
+    .about__tittle {
+      margin-top: 45px;
+      font-size: 64px;
+    }
+    
+    .skills__subtitle {
+      font-size: 40px;
+    }
+    
+    .skills__content {
+      gap: 100px;
+      margin: 60px 0px;
+    }
+  }
+  
+   
+  .education__timeline{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    gap: 40px;
+    padding-bottom: 70px;
+  }
+  
+  @media (min-width: 768px) {
+    
+    
+    .education__timeline{
+      padding-bottom: 40px;
+    }
+    .subtittle{
+      margin: 45px 0px;
+      font-size: 40px;
+    }
+    
+  }

@@ -1,0 +1,58 @@
+.education {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    
+  }
+  
+  .education__text {
+    /* text-align: right; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .education__text span {
+    display: block;
+    border-radius: 40px;
+    background: var(--black-light, #252525);
+    width: 77px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .education__text h4 {
+    display: block;
+  }
+  .education__text p{
+    text-align: end;
+    text-wrap: pretty;
+  }
+  .education__graphic{
+    position: relative;
+  }
+  .education__graphic p{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .education__graphic hr{
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background: var(--primary-color);
+    margin: 0 auto;
+    left: 50%;
+  
+    border: none;
+    
+  
+  }

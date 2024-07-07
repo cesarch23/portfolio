@@ -1,0 +1,13 @@
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skil__image{
+    max-width: 100%;
+  }
+  .skill__name{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
