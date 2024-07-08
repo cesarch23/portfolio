@@ -24,6 +24,7 @@ export class AboutComponent {
     {year:2020,tittle:"Studyng at UPC - 7mo",description:"Description about my studying must be brief also i dont now but ist ok "},
     {year:2021,tittle:"Studyng at UPC - 7mo",description:"Description about my studying must be brief also i dont now but ist ok "},
     {year:2022,tittle:"Studyng at UPC - 7mo",description:"Description about my studying must be brief also i dont now but ist ok "},
-    {year:2023,tittle:"Studyng at UPC - 7mo",description:"Description about my studying must be brief also i dont now but ist ok "},
+    {year:2023,tittle:"Studyng at UPC - 7mo",
+      description:"Description about my studying must be brief  desde la perspectiva de una las cass de dla lomas also i dont nsd s  sad as as fasd fsd sd sad fsa dfasd fds d ow but ist ok "},
   ]
 }

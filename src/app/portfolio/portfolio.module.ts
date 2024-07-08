@@ -9,6 +9,9 @@ import { PersonalInfoComponent } from './pages/about/component/personal-info/per
 import { EducationComponent } from './pages/about/component/education/education.component';
 import { SkillComponent } from './pages/about/component/skill/skill.component';
 import { MaterialModule } from '../material/material.module';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { MockupCardComponent } from './pages/projects/component/mockup-card/mockup-card.component';
+import { ProductCardComponent } from './pages/projects/component/product-card/product-card.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { MaterialModule } from '../material/material.module';
     AboutComponent,
     PersonalInfoComponent,
     EducationComponent,
-    SkillComponent
+    SkillComponent,
+    ProjectsComponent,
+    MockupCardComponent,
+    ProductCardComponent
   ],
   imports: [
     CommonModule,

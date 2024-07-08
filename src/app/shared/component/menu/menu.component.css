@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    
+    z-index: 1000;
   }
    .menu-mobile__buttons{
   
@@ -53,6 +53,7 @@
       justify-content: center;
       width: 100%;
       height: var(--menu-height);
+      z-index: 1000;
       
     }
     .menu-destock__buttons{
