@@ -15,6 +15,7 @@ import { ProductCardComponent } from './pages/projects/component/product-card/pr
 import { ProductDialogComponent } from './pages/projects/component/product-dialog/product-dialog.component';
 
 import {MatDialogModule} from '@angular/material/dialog';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     ProjectsComponent,
     MockupCardComponent,
     ProductCardComponent,
-    ProductDialogComponent
+    ProductDialogComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
