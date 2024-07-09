@@ -1,1 +1,7 @@
-<p>product-card works!</p>
+<div class="product" *ngFor="let product of products" (click)="openDialog(product)">
+    <img [src]="product.image" [alt]="product.title">
+    <div class="product__text">
+        <span> {{product.title}} </span>
+        <p> {{product.description}} </p>
+    </div>
+</div>

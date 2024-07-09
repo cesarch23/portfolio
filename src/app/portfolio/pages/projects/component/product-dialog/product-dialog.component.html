@@ -1,0 +1,32 @@
+<div class="product-details">
+    <button class="product-details__close"   mat-dialog-close mat-icon-button aria-label="close button">
+        <mat-icon aria-hidden="false" aria-label="close icon">close</mat-icon>
+    </button>
+    <h2 class="product-detail-title"> {{ data.product.title}}  </h2> 
+    <p  class="product-detail-description"> {{ data.product.description}} </p>
+     <div class="product-details__technologies">
+          <div >
+            <a *ngIf="data.product.resource" [href]="data.product.resource" target="_blank"> 
+                <img class="github logo" src="/assets/images/languages/github-logo.svg" alt="github">
+             </a>
+
+          </div>
+          <div class="languages">
+            <div class="language" *ngFor="let i of data.product.languages" >
+                  <img class="logo" *ngIf="i=='Angular'" src="/assets/images/languages/angular-logo.svg" alt="angular logo">
+                  <img class="logo" *ngIf="i=='JavaScript'" src="/assets/images/languages/javascript-logo.svg" alt="javascript logo">
+                  <img class="logo" *ngIf="i=='CSS'" src="/assets/images/languages/css-3-logo.svg" alt="css logo">
+                  <img class="logo" *ngIf="i=='HTML'" src="/assets/images/languages/html-5-logo.svg" alt="html logo">
+            </div>
+          </div>
+     </div>
+    <iframe class="product-details__video" src="https://www.youtube.com/embed/1elcwECqcrI?si=l8e-v2_yf55oYHyq" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        <!-- width="560" 
+        height="315" -->
+    </iframe>
+    
+
+</div>

@@ -1,0 +1,35 @@
+.product{
+    transition: transform ease .5s;
+    height: max-content;
+}
+.product:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.product img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+.product .product__text{
+    padding: 1rem 0;
+    border-top: 5px solid var(--secondary-color);
+    background-color: var(--black-light);
+}
+.product .product__text span{
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--primary-color);
+
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.product .product__text p{
+    text-wrap: balance;
+    text-align: center;
+    padding: 0 16px;
+    
+}

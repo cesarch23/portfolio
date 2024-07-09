@@ -12,6 +12,9 @@ import { MaterialModule } from '../material/material.module';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { MockupCardComponent } from './pages/projects/component/mockup-card/mockup-card.component';
 import { ProductCardComponent } from './pages/projects/component/product-card/product-card.component';
+import { ProductDialogComponent } from './pages/projects/component/product-dialog/product-dialog.component';
+
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -24,12 +27,14 @@ import { ProductCardComponent } from './pages/projects/component/product-card/pr
     SkillComponent,
     ProjectsComponent,
     MockupCardComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductDialogComponent
   ],
   imports: [
     CommonModule,
     PortfolioRoutingModule,
-    MaterialModule
+    MaterialModule,
+    MatDialogModule
   ]
 })
 export class PortfolioModule { }

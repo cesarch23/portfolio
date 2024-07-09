@@ -11,7 +11,8 @@ export class ProjectsComponent {
 
   public chips;
   public seleectedValue:string;
-
+  
+  
   constructor(){
     this.chips = ["Mockups", "Productos"]
     this.seleectedValue='Mockups';
@@ -24,7 +25,7 @@ export class ProjectsComponent {
     {
       title:"Nutriment Web",
       description: "Mockup de ventas de comida online: Interfaz intuitiva con menú de platos, "
-                  +"imágenes atractivas, buscador, y carrito de compras para pedidos rápidos y fáciles",
+                  +"imágenes atractivas, buscador, carrito de compras para pedidos rápidos y fáciles",
       image:"/assets/images/mockups/Nutriment-mockup-home-2.png",
       video:"url video",
       tech:["Figma"],
@@ -35,63 +36,51 @@ export class ProjectsComponent {
       title:"Bodyguard Landing page",
       description:"Landing Page de Contratación de Guardaespaldas: Presenta servicios de protección "+
       "personal altamente calificados, destacando la experiencia, discreción y seguridad. Incluye "+
-      "testimonios de clientes satisfechos, una sección de contacto fácil de usar ",
+      "testimonios de clientes satisfechos y una sección de contacto fácil de usar ",
       image:"/assets/images/mockups/bodyguard-mockup-home.png",
       video:"url video",
       tech:["Figma"],
       resource:"https://www.figma.com/design/OBzL5fboRfFh2wMmkhDm9m/Landing-page-bodyguard?node-id=0-1&t=bd7clkYk2WD8waIS-1",
-      website:"url de la pagina si tiene"
+      website:"url de la pagina"
     },
     {
       title:"Sitio web para el servicio de protección",
-      description:"Web de Contratación de Guardaespaldas: Esta permite la  "+
-      "contratacion de guardaespaldas de parte del cliente, gestión de los clientes y los guardaespaldas por parte del "+
-      "administrador, valoración de los servicios y datos estadistcos. ",
+      description:"Esta permite a los clientes contratar guardaespaldas de manera eficiente y "+
+      "segura. Además, ofrece funcionalidades avanzadas para la gestión de clientes y guardaespaldas por "+
+      "parte de los administradores, así como la valoración de los servicios prestados y la generación de "+
+      "datos estadísticos para mejorar la calidad del servicio.",
       image:"/assets/images/mockups/bodyguard-mockup-web.png",
       video:"url video",
       tech:["Figma"],
       resource:"https://www.figma.com/design/9GS8v9AtW0DRp5og1sSyyl/ARQUI-WEB---Bodyguard?node-id=0-1",
-      website:"url de la pagina si tiene"
-    }
-    // {
-    //   title:"Bodyguard",
-    //   description:"Landing page para una empresa de guardaespaldas",
-    //   image:"/assets/images/mockups/bodyguard-mockup-home.png",
-    //   video:"url video",
-    //   tech:["JS","CSS","HTML","Anugular 16"],
-    //   resource:"url del github o de figma",
-    //   website:"url de la pagina si tiene"
-    // }
-    
+      website:"url de la pagina"
+    }  
    
   ]
   public products:Product[] = [
     {
-      title:"Ecomercer",
-      description:"descricption of the mockup pued ser mucho mas que desde una perspectiva que nose se puede rodat",
-      image:"/assets/images/mockups/Nutriment-mockup-home-2.png",
+      id:1,
+      title:"HomeDecor",
+      description:"Es una pagina web que simula la compra de un mueble e "+
+      "incluye las validacion de los datos ingresados por el usuario."+
+      "Además se muestra una notificación temporal para mostrar mensajes de estado sobre alguna acción.",
+      image:"/assets/images/products/homedecor-web.png",
       video:"url video",
-      tech:[""],
-      resource:"https://www.figma.com/design/nsBJC49wMzKer8pAKynh4w/Nutriment-app?t=bd7clkYk2WD8waIS-1",
-      website:"url de la pagina si tiene"
+      languages:["JavaScript","CSS","HTML"],
+      resource:"https://github.com/cesarch23/HomeDecor",
+      website:"https://cesarch23.github.io/HomeDecor/"
     },
     {
-      title:"Bodyguard",
-      description:"Landing page para una empresa de guardaespaldas",
+      id:2,
+      title:"Bodyguard Landing page",
+      description:"Landing Page de Contratación de Guardaespaldas: Presenta servicios de protección "+
+      "personal altamente calificados, destacando la experiencia, discreción y seguridad. Incluye "+
+      "testimonios de clientes satisfechos y una sección de contacto fácil de usar ",
       image:"/assets/images/mockups/bodyguard-mockup-home.png",
       video:"url video",
-      tech:["JS","CSS","HTML","Anugular 16"],
-      resource:"https://www.figma.com/design/OBzL5fboRfFh2wMmkhDm9m/Landing-page-bodyguard?node-id=0-1&t=bd7clkYk2WD8waIS-1",
-      website:"url de la pagina si tiene"
-    },
-    {
-      title:"Bodyguard",
-      description:"Landing page para una empresa de guardaespaldas",
-      image:"/assets/images/mockups/bodyguard-mockup-home.png",
-      video:"url video",
-      tech:["JS","CSS","HTML","Anugular 16"],
-      resource:"url del github o de figma",
-      website:"url de la pagina si tiene"
+      languages:["HTML", "CSS"],
+      resource:"https://cesarch23.github.io/landing-page-bodyguard/",
+      website:"https://github.com/cesarch23/landing-page-bodyguard"
     }
     
    
