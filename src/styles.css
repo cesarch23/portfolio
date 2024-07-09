@@ -5,6 +5,15 @@
     --secondary-color:#2DCFFF;
     --white-color:#fff;
     --menu-height:94px;
+
+    --font-desk-h1:40px;
+    --font-mobile-h1:28px;
+    
+    --font-desk-h2:41px;
+    --font-mobile-h2:56px;
+    
+    --font-desk-h3:26px;
+    --font-mobile-h3:56px;
    }
    *{
      box-sizing: border-box;
@@ -20,9 +29,26 @@
    h1,h2,h3,h4{
      margin: 0;
      text-align: center;
-      
+   }
+   h1{
+    font-size: var(--font-mobile-h1);
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
    }
    p{
      margin: 0;
-   }
-   
+     font-size: 16px;
+    }
+    
+    @media (min-width: 728px)
+    {
+       h1{
+         font-size: var(--font-desk-h1);
+         text-align: center;
+       }
+       p{
+        font-size: 20px;
+       }
+    }
