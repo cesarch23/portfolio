@@ -8,7 +8,7 @@
     position: relative;
     z-index: 1000;
   }
-   .menu-mobile__buttons{
+.menu-mobile__buttons{
   
     /* position: absolute; */
     position: fixed;
@@ -40,7 +40,7 @@
     display: none;
   }
   
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .menu-mobile{
       display: none;
       
@@ -65,22 +65,21 @@
       gap: 45px;
       padding:15px 19px;
       border-radius: 30px;
-      background: rgba(37, 37, 37, 0.48);
-      /* background-color: red; */
+      background: rgba(78, 78, 78, 0.48);
       backdrop-filter: blur(2.4px);
      
     }
     .menu-destock__buttons .button {
-      width: 112px;
-      height: 32px;
+      
+      
       background-color: var(--black-light);
       border-radius: 40px;
     
       color: #FFF;
       text-align: center;
       font-size: 24px;
-      font-weight: 400;
-      padding:5px 21px;
+      font-weight: 700;
+      padding:10px 30px;
   
     }
     .menu-destock__buttons .button:hover{
