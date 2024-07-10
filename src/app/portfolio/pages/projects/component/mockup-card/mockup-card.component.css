@@ -9,7 +9,9 @@
 .mockup img{
     max-width: 100%;
     display: block;
+    aspect-ratio: 16/9;
     object-fit: cover;
+    object-position: top;
 }
 .mockup .text{
     padding: 1rem 0;
@@ -36,6 +38,10 @@
 @media (min-width: 728px) {
     .mockup img{
         width:30rem;
+        
+    }
+    .mockup .text span{    
+        font-size: 24px;
         
     }
     

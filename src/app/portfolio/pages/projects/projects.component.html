@@ -2,8 +2,9 @@
     <div class="project">
           <h2 class="project__title">Proyectos</h2>
           <div class="chips">
-              <mat-chip-listbox id="chips" aria-label="select a type of project">
-                    <mat-chip-option 
+              <mat-chip-listbox aria-label="select a type of project">
+                    <mat-chip-option
+                        class="chips__option" 
                         *ngFor="let chip of chips" [selected]="chip==chips[0]"
                         (click)="getElements(chip)"
                     >
@@ -12,7 +13,7 @@
              
               </mat-chip-listbox>
           </div>
-          <div  class="content">
+          <div>
             <app-mockup-card  class="items" *ngIf="seleectedValue==chips[0]" [mockups]="mockups" ></app-mockup-card>
             <app-product-card  class="items" *ngIf="seleectedValue==chips[1]" [products]="products" ></app-product-card>
           </div>

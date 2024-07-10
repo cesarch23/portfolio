@@ -10,7 +10,10 @@
     display: block;
     max-width: 100%;
     width: 100%;
+    aspect-ratio: 16/9;
     object-fit: cover; 
+    object-position: top;
+    
 }
 .product .product__text{
     padding: 1rem 0;
@@ -32,4 +35,9 @@
     text-align: center;
     padding: 0 16px;
     
+}
+@media(min-width:728px){
+    .product .product__text span{
+        font-size: 24px;
+    }
 }

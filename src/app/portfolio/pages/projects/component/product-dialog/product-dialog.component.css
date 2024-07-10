@@ -27,8 +27,7 @@
     background: linear-gradient(90deg, #1082E6 0%, #0098F4 15.05%, #04A0EC 30.07%, #04AFE1 44.82%, #0BC2DD 60.37%, #00CCDF 73.78%, #0ED0DE 84.77%, #21DCCA 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    font-size: 48px;
+     
 }
 .product-detail-description{
     padding: 16px 0;
@@ -44,7 +43,7 @@
     filter: drop-shadow(0px 0px 5px #0098F4);
 }
 .logo{
-    width: 32px;
+    width: 40px;
 }
 @media (min-width:728px){
     .product-details__technologies{

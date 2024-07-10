@@ -1,5 +1,6 @@
 .container {
     height: calc(100vh - var(--menu-height));
+    max-width: 1200px;
   }
   .project{
     padding-bottom: 2rem;
@@ -10,9 +11,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  
-    font-size: 64px;
-    font-weight: 900;
  
   }
   
@@ -21,19 +19,18 @@
     justify-content: center;
     padding: 3rem 0;
 }
+.chips__option{
+  font-size: 20px;
+}
   
   @media (min-width: 768px) {
-    .about__tittle {
-      margin-top: 45px;
-      font-size: 64px;
+   
+    .chips__option{
+      font-size: 22px;
     }
   
   }
 
-.content{
-    
-    
-}
 .items{
     display: grid;
     grid-template-columns: 1fr;
@@ -49,7 +46,6 @@
 
 @media (min-width: 1110px) {
     .items{
-    
         grid-template-columns: repeat(3 , 1fr);
         gap: 2rem;
     }
