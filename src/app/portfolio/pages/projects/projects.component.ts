@@ -79,8 +79,8 @@ export class ProjectsComponent {
       image:"/assets/images/mockups/bodyguard-mockup-home.png",
       video:"url video",
       languages:["HTML", "CSS"],
-      resource:"https://cesarch23.github.io/landing-page-bodyguard/",
-      website:"https://github.com/cesarch23/landing-page-bodyguard"
+      resource:"https://github.com/cesarch23/landing-page-bodyguard",
+      website:"https://cesarch23.github.io/landing-page-bodyguard/"
     }
     
    
