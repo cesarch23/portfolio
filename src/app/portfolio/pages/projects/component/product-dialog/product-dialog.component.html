@@ -7,13 +7,13 @@
      <div class="product-details__technologies">
           <div >
             <a *ngIf="data.product.resource" [href]="data.product.resource" target="_blank"> 
-                <img class="github logo" src="/assets/images/languages/github-logo.svg" alt="github">
+                <img class="github logo" src="/assets/images/languages/Github-logo.svg" alt="github">
              </a>
 
           </div>
           <div class="languages">
             <div class="language" *ngFor="let i of data.product.languages" >
-                  <img class="logo" *ngIf="i=='Angular'" src="/assets/images/languages/angular-logo.svg" alt="angular logo">
+                  <img class="logo" *ngIf="i=='angular'" src="/assets/images/languages/angular-logo.svg" alt="angular logo">
                   <img class="logo" *ngIf="i=='JavaScript'" src="/assets/images/languages/javascript-logo.svg" alt="javascript logo">
                   <img class="logo" *ngIf="i=='CSS'" src="/assets/images/languages/css-3-logo.svg" alt="css logo">
                   <img class="logo" *ngIf="i=='HTML'" src="/assets/images/languages/html-5-logo.svg" alt="html logo">

@@ -3,7 +3,7 @@
   }
   .subtittle{
     margin: 40px 0px;
-    font-size: 20px;
+    
   }
   .about__tittle {
     margin-top: 40px;
@@ -12,40 +12,33 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
-    font-size: 44px;
-    font-weight: 900;
-  
   }
   
   .skills__content {
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
+    justify-content: space-between;
     gap: 28px;
-    margin: 40px 0px;
   
   }
   
   @media (min-width: 768px) {
     .about__tittle {
       margin-top: 45px;
-      font-size: 64px;
-    }
-    
-    .skills__subtitle {
-      font-size: 40px;
+       
     }
     
     .skills__content {
       gap: 100px;
-      margin: 60px 0px;
     }
   }
   
    
   .education__timeline{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
   
@@ -54,14 +47,12 @@
   }
   
   @media (min-width: 768px) {
-    
-    
     .education__timeline{
       padding-bottom: 40px;
     }
     .subtittle{
       margin: 45px 0px;
-      font-size: 40px;
+       
     }
     
   }

@@ -1,10 +1,17 @@
 .education {
     display: flex;
-    flex-direction: row;
+    justify-content: end;
     gap: 24px;
-     
-    max-width: 495px;
+    width: 100%;
+    max-width: 500px;
+    /* background-color: red; */
     /* TODO: CHANGE TO RELATIVE */
+  }
+  @media(min-width:728px){
+    .education {
+      width: 500px;
+      max-width: 600px;
+    }
   }
   
   .education__text {

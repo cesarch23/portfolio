@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Skill } from './interfaces/skill.interface';
 
 @Component({
   selector: 'app-about',
@@ -6,25 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  public skills =[
-    { name:'HTML',percentage:75 },
-    { name:'CSS',percentage:70 },
-    { name:'Javascript',percentage:70 },
-    { name:'Angular',percentage:70 },
-    { name:'Typescript',percentage:70 },
-    { name:'RxJs',percentage:70 },
-    { name:'C#',percentage:70 },
-    { name:'.NET 6',percentage:70 },
-    { name:'Java',percentage:70 },
-    { name:'Sprint Boot',percentage:70 },
-    { name:'SQL Server',percentage:70 },
-    { name:'UX/UI',percentage:70 }
+  public skills:Skill[] =[
+    { name:'HTML',percentage:75, oficialName:"" },
+    { name:'CSS',percentage:70 , oficialName:""},
+    { name:'JavaScript',percentage:70, oficialName:"" },
+    { name:'angular',percentage:70 , oficialName:""},
+    { name:'TypeScript',percentage:70 , oficialName:""},
+    { name:'RxJs',percentage:70 , oficialName:""},
+    { name:'csharp',percentage:70 , oficialName:""},
+    { name:'dotnet',percentage:70 , oficialName:""},
+    { name:'Java',percentage:70 , oficialName:""},
+    { name:'Spring',percentage:70 , oficialName:"Spring"},
+    { name:'SQL',percentage:70 , oficialName:"SQL Server"},
+    { name:'Figma',percentage:70 , oficialName:"Figma"}
   ]
   public education =[
-    {year:2020,tittle:"Studyng at UPC - 7mo",description:"Description about my studying must be brief also i dont now but ist ok "},
-    {year:2021,tittle:"Studyng at UPC - 7mo",description:"Description about my studying must be brief also i dont now but ist ok "},
-    {year:2022,tittle:"Studyng at UPC - 7mo",description:"Description about my studying must be brief also i dont now but ist ok "},
-    {year:2023,tittle:"Studyng at UPC - 7mo",
-      description:"Description about my studying must be brief  desde la perspectiva de una las cass de dla lomas also i dont nsd s  sad as as fasd fsd sd sad fsa dfasd fds d ow but ist ok "},
+    {year:2021,tittle:"Ingresé a la UPC.",description:"Empece a estudiar desde el primer trimestre del año. "},
+    {year:2024,tittle:"Estudiando en la UPC - 7mo ciclo",description:"Actualmente me encuentro en el septimo ciclo de la universidad."},
+    
   ]
 }

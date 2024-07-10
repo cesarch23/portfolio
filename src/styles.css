@@ -9,11 +9,11 @@
     --font-desk-h1:40px;
     --font-mobile-h1:28px;
     
-    --font-desk-h2:41px;
-    --font-mobile-h2:56px;
+    --font-desk-h2:38px;
+    --font-mobile-h2:26px;
     
-    --font-desk-h3:26px;
-    --font-mobile-h3:56px;
+    --font-desk-h3:34px;
+    --font-mobile-h3:24px;
    }
    *{
      box-sizing: border-box;
@@ -29,13 +29,22 @@
    h1,h2,h3,h4{
      margin: 0;
      text-align: center;
+    
    }
    h1{
     font-size: var(--font-mobile-h1);
     font-weight: 900;
     font-style: normal;
     line-height: normal;
-    text-align: center;
+    font-weight: 900;
+   }
+   h2{
+    font-size: var(--font-mobile-h2);
+    font-weight: 900;
+   }
+   h3{
+    font-size: var(--font-mobile-h3);
+    font-weight: 700;
    }
    p{
      margin: 0;
@@ -46,7 +55,12 @@
     {
        h1{
          font-size: var(--font-desk-h1);
-         text-align: center;
+       }
+       h2{
+         font-size: var(--font-desk-h2);
+       }
+       h3{
+         font-size: var(--font-desk-h3);
        }
        p{
         font-size: 20px;
