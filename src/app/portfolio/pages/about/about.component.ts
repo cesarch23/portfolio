@@ -10,7 +10,7 @@ export class AboutComponent {
   public skills:Skill[] =[
     { name:'HTML',percentage:75, oficialName:"" },
     { name:'CSS',percentage:70 , oficialName:""},
-    { name:'JavaScript',percentage:70, oficialName:"" },
+    { name:'Javascript',percentage:70, oficialName:"" },
     { name:'angular',percentage:70 , oficialName:""},
     { name:'TypeScript',percentage:70 , oficialName:""},
     { name:'RxJs',percentage:70 , oficialName:""},

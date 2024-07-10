@@ -1,9 +1,9 @@
 <div class="skill" *ngFor="let skill of skills">
     <img  class="skil__image" [src]="'/assets/images/skills-percentage/skill-'+skill.percentage+'.svg'" [alt]="skill.name">
     <div class="skill__language">
-        <img *ngIf="skill.name!='JavaScript'" [src]="'/assets/images/languages/'+skill.name+'-logo.svg'" 
+        <img *ngIf="skill.name!='Javascript'" [src]="'/assets/images/languages/'+skill.name+'-logo.svg'" 
         [alt]="'logo'+skill.name">
-        <img *ngIf="skill.name==='JavaScript'" [src]="'/assets/images/languages/JavaScript-logo.svg'" 
+        <img *ngIf="skill.name==='Javascript'" [src]="'/assets/images/languages/JavaScript-logo.svg'" 
         [alt]="'logo'+skill.name">
         
     </div>

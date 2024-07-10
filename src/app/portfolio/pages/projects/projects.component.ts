@@ -66,7 +66,7 @@ export class ProjectsComponent {
       "Además se muestra una notificación temporal para mostrar mensajes de estado sobre alguna acción.",
       image:"/assets/images/products/homedecor-web.png",
       video:"url video",
-      languages:["JavaScript","CSS","HTML"],
+      languages:["Javascript","CSS","HTML"],
       resource:"https://github.com/cesarch23/HomeDecor",
       website:"https://cesarch23.github.io/HomeDecor/"
     },
