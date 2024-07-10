@@ -4,12 +4,12 @@ import { NotFoundPageComponent } from './shared/pages/not-found-page/not-found-p
 
 const routes: Routes = [
   {
-    path:'portfolio-cesar',
+    path:'portfolio',
     loadChildren:()=>import('./portfolio/portfolio.module').then(m=>m.PortfolioModule)
   },
   {
     path:'',
-    redirectTo: 'portfolio-cesar',
+    redirectTo: 'portfolio',
     pathMatch:'full'
   },
   {
