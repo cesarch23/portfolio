@@ -8,12 +8,12 @@
      <div class="product-details__technologies">
           <div >
             <a *ngIf="data.product.resource" [href]="data.product.resource" target="_blank"> 
-                <img class="github logo" src="/assets/images/tech/Github-logo.svg" alt="github logo">
+                <img class="github logo" src="/assets/images/tech/Github-logo.svg" alt="github logo" loading="lazy">
              </a>
 
           </div>
           <div class="languages">
-            <img *ngFor="let lang of data.product.tecnology" class="logo" [src]="'/assets/images/tech/'+lang+ '-logo.svg'" [alt]="lang + 'logo'">
+            <img *ngFor="let lang of data.product.tecnology" class="logo" [src]="'/assets/images/tech/'+lang+ '-logo.svg'" [alt]="lang + 'logo'" loading="lazy">
           </div>
      </div>
     
