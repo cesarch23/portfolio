@@ -26,7 +26,7 @@ export class ProjectsComponent {
       title:"Nutriment Web",
       description: "Mockup de ventas de comida online: Interfaz intuitiva con menú de platos, "
                   +"imágenes atractivas, buscador, carrito de compras para pedidos rápidos y fáciles",
-      image:"/assets/images/mockups/Nutriment-mockup-home-2.png",
+      image:"/assets/images/mockups/Nutriment-mockup-home.png",
       video:"url video",
       tech:["Figma"],
       resource:"https://www.figma.com/design/nsBJC49wMzKer8pAKynh4w/Nutriment-app?t=bd7clkYk2WD8waIS-1",
