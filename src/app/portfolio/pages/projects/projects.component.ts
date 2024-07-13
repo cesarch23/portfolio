@@ -66,7 +66,7 @@ export class ProjectsComponent {
       "Además se muestra una notificación temporal para mostrar mensajes de estado sobre alguna acción.",
       image:"/assets/images/products/homedecor-web.png",
       video:"url video",
-      languages:["Javascript","CSS","HTML"],
+      tecnology:["Javascript","CSS","HTML"],
       resource:"https://github.com/cesarch23/HomeDecor",
       website:"https://cesarch23.github.io/HomeDecor/"
     },
@@ -75,12 +75,22 @@ export class ProjectsComponent {
       title:"Bodyguard Landing page",
       description:"Landing Page de Contratación de Guardaespaldas: Presenta servicios de protección "+
       "personal altamente calificados, destacando la experiencia, discreción y seguridad. Incluye "+
-      "testimonios de clientes satisfechos y una sección de contacto fácil de usar ",
+      "testimonios de clientes satisfechos y una sección de contacto fácil de usar. ",
       image:"/assets/images/mockups/bodyguard-mockup-home.png",
       video:"url video",
-      languages:["HTML", "CSS"],
+      tecnology:["HTML", "CSS"],
       resource:"https://github.com/cesarch23/landing-page-bodyguard",
       website:"https://cesarch23.github.io/landing-page-bodyguard/"
+    },
+    {
+      id:3,
+      title:"Aplicación de búsqueda de países",
+      description:"Este sitio web permite buscar países por su nombre, capital y filtrarlos por región. ",
+      image:"/assets/images/products/country-app.png",
+      video:"url video",
+      tecnology:["HTML", "CSS", "TypeScript","angular"],
+      resource:"https://github.com/cesarch23/country-search-app",
+      website:"https://cesarch23.github.io/country-search-app"
     }
     
    

@@ -5,11 +5,11 @@ export interface Product {
     image:       string;
     video:       string;
     tech?:        technologies[];
-    languages?:    languages[];
+    tecnology?:    tecnology[];
     resource:    string;
     website:     string;
   }
 
- export type languages = "Github" | "Javascript" | "HTML" | "CSS" | "angular" 
- | "TypeScript" | "RxJs" | "UX/UI" | "SQL" | "Spring" | "Java" | "dotnet" | "csharp" | "";
+ export type tecnology = "Github" | "Javascript" | "HTML" | "CSS" | "angular" 
+ | "TypeScript" | "RxJs" | "UX/UI" | "SQL" | "Spring" | "Java" | "dotnet" | "csharp" | "Git";
  export type technologies = "Figma";
