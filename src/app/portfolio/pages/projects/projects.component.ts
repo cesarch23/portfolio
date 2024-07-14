@@ -26,7 +26,7 @@ export class ProjectsComponent {
       title:"Nutriment Web",
       description: "Mockup de ventas de comida online: Interfaz intuitiva con menú de platos, "
                   +"imágenes atractivas, buscador, carrito de compras para pedidos rápidos y fáciles",
-      image:"/assets/images/mockups/Nutriment-mockup-home.png",
+      image:"/assets/images/mockups/Nutriment-mockup-home.webp",
       video:"url video",
       tech:["Figma"],
       resource:"https://www.figma.com/design/nsBJC49wMzKer8pAKynh4w/Nutriment-app?t=bd7clkYk2WD8waIS-1",
@@ -37,7 +37,7 @@ export class ProjectsComponent {
       description:"Landing Page de Contratación de Guardaespaldas: Presenta servicios de protección "+
       "personal altamente calificados, destacando la experiencia, discreción y seguridad. Incluye "+
       "testimonios de clientes satisfechos y una sección de contacto fácil de usar ",
-      image:"/assets/images/mockups/bodyguard-mockup-home.png",
+      image:"/assets/images/mockups/bodyguard-mockup-home.webp",
       video:"url video",
       tech:["Figma"],
       resource:"https://www.figma.com/design/OBzL5fboRfFh2wMmkhDm9m/Landing-page-bodyguard?node-id=0-1&t=bd7clkYk2WD8waIS-1",
@@ -64,7 +64,7 @@ export class ProjectsComponent {
       description:"Es una pagina web que simula la compra de un mueble e "+
       "incluye las validacion de los datos ingresados por el usuario."+
       "Además se muestra una notificación temporal para mostrar mensajes de estado sobre alguna acción.",
-      image:"/assets/images/products/homedecor-web.png",
+      image:"/assets/images/products/homedecor-web.webp",
       video:"url video",
       tecnology:["Javascript","CSS","HTML"],
       resource:"https://github.com/cesarch23/HomeDecor",
