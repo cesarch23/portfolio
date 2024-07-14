@@ -1,5 +1,5 @@
 <div class="mockup" *ngFor="let mock of mockups" (click)="openResource(mock.resource)">
-    <img  [src]="mock.image" [alt]="mock.title" loading="lazy">
+    <img  [src]="mock.image" [alt]="mock.title">
         <div class="text">
             <span> {{mock.title }} </span>
             <p>{{ mock.description }} </p>
