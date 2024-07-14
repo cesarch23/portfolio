@@ -2,9 +2,9 @@
     <img  class="skil__image" [src]="'/assets/images/skills-percentage/skill-'+skill.percentage+'.svg'" [alt]="skill.name">
     <div class="skill__language">
         <img *ngIf="skill.name!='Javascript'" [src]="'/assets/images/tech/'+skill.name+'-logo.svg'" 
-        [alt]="'logo'+skill.name" loading="lazy">
+        [alt]="'logo'+skill.name" >
         <img *ngIf="skill.name=='Javascript'" src="/assets/images/tech/Javascript-logo.svg" 
-        [alt]="'logo'+skill.name" loading="lazy">
+        [alt]="'logo'+skill.name">
         
     </div>
     <p class="skill__name"> {{skill.percentage + "%" }} </p>
