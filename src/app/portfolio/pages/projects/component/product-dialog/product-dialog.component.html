@@ -3,7 +3,9 @@
         <mat-icon aria-hidden="false" aria-label="close icon">close</mat-icon>
     </button>
     <h2 class="product-detail-title"> {{ data.product.title}}  </h2> 
-    <p  class="product-detail-description"> {{ data.product.description}} <a [href]="data.product.website" target="_blank" >Demo</a> </p>
+    <p  class="product-detail-description"> {{ data.product.description}} 
+      <a *ngIf="data.product.website.trim().length>0" [href]="data.product.website" target="_blank" >Demo</a> 
+    </p>
     
      <div class="product-details__technologies">
           <div >

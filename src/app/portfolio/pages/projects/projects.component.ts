@@ -111,6 +111,47 @@ export class ProjectsComponent {
   public products:Product[] = [
     {
       id:1,
+      title:"Aplicación web para el monitoreo de atención",
+      description: "Aplicación web para la deteccion y monitoreo de la atención de estudiantes "
+                    +"en clases virtuales, mediante el uso de la cámara web y algoritmos de visión por computadora."+
+                    "Este permite alertar cuando el estudiante use telefono, tengas somnolencia y este ausente",
+      image:[
+        "/assets/images/mockups/monitoreo-teacher-dashboard.png",
+      ],
+      video:"url video",
+      tecnology:["HTML", "CSS", "TypeScript","angular"],
+      resource:"https://github.com/cesarch23/AttentionMonitorWebApp",
+      website:"https://attention-monitor-web-app.vercel.app/"
+    },
+    {
+      id:2,
+      title:"Aplicación web para la gestion de carteras",
+      description: "Aplicación web que permite la gestión de carteras el cual contiene letras y facturas",
+      image:[
+        "/assets/images/mockups/listado-de-carteras.png"
+      ],
+      video:"url video",
+      tecnology:["HTML", "CSS", "TypeScript","angular"],
+      resource:"https://github.com/cesarch23/gestion-cartera",
+      website:""
+    },
+    {
+      id:3,
+      title:"Sitio web para el servicio de protección de personas",
+      description:"Permite a los clientes contratar guardaespaldas de manera eficiente y "+
+      "segura. Además, ofrece funcionalidades avanzadas para la gestión de clientes y guardaespaldas por "+
+      "parte de los administradores, así como la valoración de los servicios prestados y la generación de "+
+      "datos estadísticos para mejorar la calidad del servicio.",
+      image:[
+        "/assets/images/mockups/bodyguard/bodyguard-desktop-Clients-guardaespaldas.png",
+      ],
+      video:"url video",
+      tecnology:["HTML", "CSS", "TypeScript","angular"],
+      resource:"https://github.com/cesarch23/Front-Bodyguard",
+      website:""
+    },
+    {
+      id:4,
       title:"HomeDecor",
       description:"Es una pagina web que simula la compra de un mueble e "+
       "incluye las validacion de los datos ingresados por el usuario."+
@@ -125,7 +166,7 @@ export class ProjectsComponent {
       website:"https://cesarch23.github.io/HomeDecor/"
     },
     {
-      id:2,
+      id:5,
       title:"Bodyguard Landing page",
       description:"Landing Page de Contratación de Guardaespaldas: Presenta servicios de protección "+
       "personal altamente calificados, destacando la experiencia, discreción y seguridad. Incluye "+
@@ -140,7 +181,7 @@ export class ProjectsComponent {
       website:"https://cesarch23.github.io/landing-page-bodyguard/"
     },
     {
-      id:3,
+      id:6,
       title:"Aplicación de búsqueda de países",
       description:"Este sitio web permite buscar países por su nombre, capital y filtrarlos por región. ",
       image:[

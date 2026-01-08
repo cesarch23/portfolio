@@ -25,7 +25,7 @@ export class AboutComponent {
   ]
   public education =[
     {year:2021,tittle:"Ingresé a la UPC.",description:"Empece a estudiar desde el primer trimestre del año. "},
-    {year:2024,tittle:"Estudiando en la UPC - 7mo ciclo",description:"Actualmente me encuentro en el septimo ciclo de la universidad."},
+    {year:2025,tittle:"Fin de la UPC",description:"Finalice mis estudios universitarios."},
     
   ]
 }
