@@ -3,7 +3,7 @@
     height: max-content;
 }
 .mockup:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor:pointer;
 }
 .mockup img{
@@ -35,14 +35,55 @@
     
 }
  
-@media (min-width: 728px) {
+@media (min-width: 46rem) {
+    /* Use clamp so image grows responsively without px */
     .mockup img{
-        width:30rem;
-        
+        width: clamp(20rem, 50vw, 40rem);
+        margin: 0 auto;
     }
-    .mockup .text span{    
-        font-size: 24px;
-        
+    .mockup .text span{
+        font-size: 1.5rem;
     }
-    
 }
+
+/* Per-image controls inside each mock */
+.image-wrap{ position: relative; }
+.img-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    border: none;
+    
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.img-nav.prev{ left: 8px; }
+.img-nav.next{ right: 8px; }
+.img-indicators{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+.img-indicators button{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background: hsla(203, 100%, 48%, 0.2);
+}
+.img-indicators button.active{ background: var(--primary-color); }

@@ -16,6 +16,7 @@ import { ProductDialogComponent } from './pages/projects/component/product-dialo
 
 import {MatDialogModule} from '@angular/material/dialog';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AnalyticsCardComponent } from './pages/projects/component/analytics-card/analytics-card.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     MockupCardComponent,
     ProductCardComponent,
     ProductDialogComponent,
-    ContactComponent
+    ContactComponent,
+    AnalyticsCardComponent
   ],
   imports: [
     CommonModule,

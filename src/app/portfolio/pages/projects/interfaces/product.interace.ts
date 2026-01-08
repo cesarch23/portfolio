@@ -2,7 +2,7 @@ export interface Product {
     id?:number;
     title:       string;
     description: string;
-    image:       string;
+    image:       string[];
     video:       string;
     tech?:        technologies[];
     tecnology?:    tecnology[];

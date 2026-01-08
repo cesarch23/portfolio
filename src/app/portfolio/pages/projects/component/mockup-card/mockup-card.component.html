@@ -1,7 +1,17 @@
-<div class="mockup" *ngFor="let mock of mockups" (click)="openResource(mock.resource)">
-    <img  [src]="mock.image" [alt]="mock.title">
-        <div class="text">
-            <span> {{mock.title }} </span>
-            <p>{{ mock.description }} </p>
+<div class="mockup" *ngFor="let mock of mockups; let i = index" (click)="openResource(mock.resource)">
+    <div class="image-wrap">
+        <img [src]="getMockImage(mock, i)" [alt]="mock.title">
+
+        <button class="img-nav prev" *ngIf="mock.image.length > 1" (click)="prevImage(i); $event.stopPropagation()" aria-label="Anterior imagen">‹</button>
+        <button class="img-nav next" *ngIf="mock.image.length > 1" (click)="nextImage(i); $event.stopPropagation()" aria-label="Siguiente imagen">›</button>
+
+        <div class="img-indicators" *ngIf=" mock.image.length > 1">
+            <button *ngFor="let img of mock.image; let j = index" (click)="imagesIndex[i] = j; $event.stopPropagation()" [class.active]="imagesIndex[i] === j"></button>
         </div>
+    </div>
+
+    <div class="text">
+        <span> {{mock.title }} </span>
+        <p>{{ mock.description }} </p>
+    </div>
 </div>
