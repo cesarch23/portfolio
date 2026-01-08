@@ -172,7 +172,7 @@ export class ProjectsComponent {
       "personal altamente calificados, destacando la experiencia, discreción y seguridad. Incluye "+
       "testimonios de clientes satisfechos y una sección de contacto fácil de usar. ",
       image:[
-        "/assets/images/mockups/bodyguard-mockup-home.png",
+        "/assets/images/mockups/bodyguard-mockup-home.webp",
         "/assets/images/products/country-app.png"
       ],
       video:"url video",
