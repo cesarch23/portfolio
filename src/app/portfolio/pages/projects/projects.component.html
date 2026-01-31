@@ -16,7 +16,7 @@
           <div>
             <app-mockup-card  class="items" *ngIf="seleectedValue==chips[0]" [mockups]="mockups" ></app-mockup-card>
             <app-product-card  class="items" *ngIf="seleectedValue==chips[1]" [products]="products" ></app-product-card>
-            <app-analytics-card  class="items" *ngIf="seleectedValue==chips[2]" ></app-analytics-card>
+            <app-analytics-card    *ngIf="seleectedValue==chips[2]" ></app-analytics-card>
           </div>
           
           
