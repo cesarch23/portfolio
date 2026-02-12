@@ -1,0 +1,17 @@
+<div class="mockup" *ngFor="let item of automations; let i = index" (click)="openResource(item.resource)">
+    <div class="image-wrap">
+        <img [src]="getMockImage(item, i)" [alt]="item.title">
+
+        <button class="img-nav prev" *ngIf="item.image.length > 1" (click)="prevImage(i); $event.stopPropagation()" aria-label="Anterior imagen">‹</button>
+        <button class="img-nav next" *ngIf="item.image.length > 1" (click)="nextImage(i); $event.stopPropagation()" aria-label="Siguiente imagen">›</button>
+
+        <div class="img-indicators" *ngIf=" item.image.length > 1">
+            <button *ngFor="let img of item.image; let j = index" (click)="imagesIndex[i] = j; $event.stopPropagation()" [class.active]="imagesIndex[i] === j"></button>
+        </div>
+    </div>
+
+    <div class="text">
+        <span> {{item.title }} </span>
+        <p>{{ item.description }} </p>
+    </div>
+</div>

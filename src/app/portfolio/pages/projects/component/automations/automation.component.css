@@ -1,21 +1,28 @@
 .mockup{
     transition: transform ease .5s;
     height: max-content;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 1rem;
+    @media (width>=768px){
+        grid-template-columns: 2fr 1fr;
+    }
+    
 }
 .mockup:hover{
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     cursor:pointer;
 }
 .mockup img{
     max-width: 100%;
     display: block;
     aspect-ratio: 16/9;
-    object-fit: fill;
+    object-fit: cover;
     object-position: top;
 }
 .mockup .text{
     padding: 1rem 0;
-    border-top: 5px solid var(--secondary-color);
+    
     background-color: var(--black-light);
 }
 .mockup .text span{
@@ -38,7 +45,7 @@
 @media (min-width: 46rem) {
     /* Use clamp so image grows responsively without px */
     .mockup img{
-        width: clamp(20rem, 50vw, 40rem);
+        /* width: clamp(20rem, 50vw, 40rem); */
         margin: 0 auto;
     }
     .mockup .text span{

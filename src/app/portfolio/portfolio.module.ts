@@ -17,6 +17,7 @@ import { ProductDialogComponent } from './pages/projects/component/product-dialo
 import {MatDialogModule} from '@angular/material/dialog';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AnalyticsCardComponent } from './pages/projects/component/analytics-card/analytics-card.component';
+import { AutomationComponent } from './pages/projects/component/automations/automation.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AnalyticsCardComponent } from './pages/projects/component/analytics-car
     ProductCardComponent,
     ProductDialogComponent,
     ContactComponent,
-    AnalyticsCardComponent
+    AnalyticsCardComponent,
+    AutomationComponent
   ],
   imports: [
     CommonModule,
