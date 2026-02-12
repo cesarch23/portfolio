@@ -5,7 +5,8 @@ import { Product } from '../../interfaces/product.interace';
 @Component({
   selector: 'app-product-dialog',
   templateUrl: './product-dialog.component.html',
-  styleUrls: ['./product-dialog.component.css']
+  styleUrls: ['./product-dialog.component.css'],
+  standalone:false,
 })
 export class ProductDialogComponent {
 

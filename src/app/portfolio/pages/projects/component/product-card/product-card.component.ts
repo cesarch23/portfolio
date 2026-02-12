@@ -6,7 +6,8 @@ import { ProductDialogComponent } from '../product-dialog/product-dialog.compone
 @Component({
   selector: 'app-product-card',
   templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.css']
+  styleUrls: ['./product-card.component.css'],
+  standalone:false,
 })
 export class ProductCardComponent {
   @Input() products:Product[]=[];

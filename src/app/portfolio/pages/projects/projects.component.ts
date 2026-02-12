@@ -5,7 +5,8 @@ import { Product } from './interfaces/product.interace';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
+  standalone:false,
 })
 export class ProjectsComponent {
 
@@ -14,7 +15,7 @@ export class ProjectsComponent {
   
   
   constructor(){
-    this.chips = ["Mockups", "Productos","Power BI"]
+    this.chips = ["Mockups", "Productos","Power BI", "Machine learning","Power Automate"]
     this.seleectedValue='Mockups';
   }
   

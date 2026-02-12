@@ -4,7 +4,8 @@ import { Product } from '../../interfaces/product.interace';
 @Component({
   selector: 'app-mockup-card',
   templateUrl: './mockup-card.component.html',
-  styleUrls: ['./mockup-card.component.css']
+  styleUrls: ['./mockup-card.component.css'],
+  standalone:false,
 })
 export class MockupCardComponent implements OnChanges {
   @Input() mockups: Product[] = [];
