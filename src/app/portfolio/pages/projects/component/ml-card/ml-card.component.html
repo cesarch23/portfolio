@@ -1,0 +1,94 @@
+<div class="proyectos">
+
+    <div class="proyecto">
+        <h3>Modelo predictivo de tipo de diabetes</h3>
+        <p><strong>Objetivo</strong>: Desarrollar un modelo de Machine Learning para clasificar el tipo de diabetes
+            (Tipo mellitis tipo 1 vs. mellitipos tipo 2) basándose en datos demográficos y de historial médico de
+            pacientes.</p>
+        <p><strong>Descripción del Proyecto</strong>:<br>
+            Este proyecto abarca un ciclo completo de ciencia de datos, desde la ingesta y limpieza de datos hasta
+            la optimización y evaluación de modelos predictivos.</p>
+        <p><strong>1. Carga y Preprocesamiento de Datos</strong>:</p>
+        <ul>
+            <li>Se consolidaron múltiples archivos CSV de afiliados activos con diagnóstico de diabetes (más de 5
+                millones de registros iniciales).</li>
+            <li>Se realizó una selección y renombrado de columnas, eliminando información redundante o irrelevante.
+            </li>
+            <li>Se filtraron los datos para incluir solo los tipos de diabetes relevantes (Tipo 1 y Tipo 2),
+                resultando en un dataset de 57,603 registros únicos.</li>
+        </ul>
+
+        <p><strong>2. Calidad y Limpieza de Datos</strong>:</p>
+        <ul>
+            <li>Se optimizaron los tipos de datos para mejorar la eficiencia de memoria (ej., <code>int8</code>,
+                <code>category</code>).
+            </li>
+            <li>Se identificaron y eliminaron registros duplicados.</li>
+            <li>Se verificó la ausencia de valores nulos en el dataset.</li>
+        </ul>
+
+        <p><strong>3. Detección y Tratamiento de Outliers</strong>:</p>
+        <ul>
+            <li>Se aplicaron técnicas basadas en el Rango Intercuartílico (IQR) para identificar y corregir valores
+                atípicos en variables numéricas clave como <code>edad</code>, <code>cant_atenciones</code> y
+                <code>dias_hosp</code>, utilizando un método de capping para mantener la integridad de los datos.
+            </li>
+        </ul>
+
+        <p><strong>4. Análisis Exploratorio de Datos (EDA)</strong>:</p>
+        <ul>
+            <li>Se llevó a cabo un análisis univariado para comprender la distribución de variables categóricas y
+                numéricas mediante gráficos de barras, histogramas y estadísticas descriptivas.</li>
+            <li>Se exploraron las relaciones bivariadas entre variables utilizando boxplots, scatter plots y un mapa
+                de calor para identificar correlaciones entre las características numéricas.</li>
+        </ul>
+
+        <p><strong>5. Transformación de Características para Modelado</strong>:</p>
+        <ul>
+            <li>Se verificó la ausencia de multicolinealidad entre las variables predictoras numéricas.</li>
+            <li>El dataset se dividió en conjuntos de entrenamiento, validación y prueba, manteniendo la proporción
+                de las clases objetivo mediante la estratificación.</li>
+            <li>Se aplicó One-Hot Encoding a las variables categóricas (<code>sexo</code>,
+                <code>con_dx_obesidad</code>, <code>con_dx_saludmental</code>).
+            </li>
+            <li>Se utilizó Robust Scaling para normalizar las variables numéricas, haciéndolas robustas a outliers.
+            </li>
+            <li>La variable objetivo (<code>tipo_diabetes</code>) fue codificada numéricamente para el entrenamiento
+                del modelo.</li>
+        </ul>
+
+        <p><strong>6. Desarrollo y Optimización del Modelo</strong>:</p>
+        <ul>
+            <li>Se construyó un modelo de clasificación inicial utilizando <code>RandomForestClassifier</code>.</li>
+            <li>Se evaluó la estabilidad del modelo mediante validación cruzada (cross-validation) y se utilizaron
+                métricas como <code>f1-score</code>.</li>
+            <li>Se implementó una búsqueda aleatoria (<code>RandomizedSearchCV</code>) con validación cruzada
+                estratificada (<code>StratifiedKFold</code>) para optimizar los hiperparámetros del
+                <code>RandomForestClassifier</code>, enfocándose en maximizar la métrica <code>recall</code> para la
+                clase minoritaria.
+            </li>
+        </ul>
+
+        <p><strong>7. Evaluación del Modelo</strong>:</p>
+        <ul>
+            <li>Se evaluó el rendimiento del modelo optimizado en los conjuntos de entrenamiento y validación
+                utilizando matrices de confusión y reportes de clasificación, observando mejoras significativas en
+                las métricas clave post-optimización.</li>
+        </ul>
+
+        <p><strong>Tecnologías/Librerías</strong>: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+            (RandomForestClassifier, OneHotEncoder, RobustScaler, train_test_split, RandomizedSearchCV,
+            StratifiedKFold, classification_report, confusion_matrix, cross_val_score).</p>
+
+
+        <a href="https://colab.research.google.com/drive/1m-ydHr_dNRD_zNCCqEWa8fKK4MPPhk52?usp=drive_link"
+            target="_blank">
+            Ver solución completa
+        </a>
+    </div>
+  
+
+
+
+
+</div>
